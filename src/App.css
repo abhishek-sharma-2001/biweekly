@@ -1,0 +1,124 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+  /* background-color: #333; */
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: #333; */
+  /* color: white; */
+  padding: 10px;
+}
+
+.left-content {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 30px;
+}
+
+.left-title {
+  font-size: 2em;
+  font-weight: bold;
+  margin-left: 2px;
+}
+
+.right-links {
+  display: flex;
+}
+
+.right-links a {
+  color: black;
+  text-decoration: none;
+  margin-left: 20px;
+  transition: transform 0.1s ease;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.right-links a:hover {
+  transform: scale(1.1);
+}
+/* Define the initial state for the text */
+a {
+  position: relative;
+  text-decoration: none;
+  color: orange; /* Set your desired text color */
+  overflow: hidden;
+}
+
+/* Create a pseudo-element for the underline */
+a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: orange;
+  transition: width 0.5s ease;
+}
+
+a:hover::before {
+  width: 100%;
+}
+
+a:not(:hover)::before {
+  width: 0;
+}
+/* TopPerformers.css */
+/* TopPerformers.css */
+
+.top-performers-container {
+  text-align: center;
+  padding: 20px;
+  background-color: rgb(214, 153, 22);
+  border-radius: 8px;
+  margin: 20px;
+}
+
+h2 {
+  color: #0c0c0c;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.performers-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.performer-card {
+  text-align: center;
+  margin: 10px;
+  transition: transform 0.1s; /* Add transition for card scaling */
+}
+
+.performer-card:hover {
+  transform: scale(1.05); /* Scale the card on hover */
+}
+
+.performer-photo {
+  width: 80px;
+  height: 80px;
+  object-fit: scale-down; /* Ensure the image covers the entire container */
+  border-radius: 50%; /* Make the image circular */
+  margin: 20px auto; /* Center the image horizontally */
+  display: block; /* Remove any default inline-block styles */
+}
+
+.performer-details {
+  margin-top: 10px;
+}
+.mb-2{
+  color: rgb(0, 7, 12);
+}
+/* Add more styles as needed */
