@@ -4,7 +4,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Ubuntu", sans-serif;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   /* background-color: #333; */
 }
 .header {
