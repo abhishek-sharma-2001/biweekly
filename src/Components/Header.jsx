@@ -13,9 +13,9 @@ const Header = () => {
         </div>
         <div className="right-links">
           <Link to="/">Home</Link>
-          <Link to="/about">About</Link>
+          {/* <Link to="/about">About</Link> */}
           <Link to="/performance">Performance</Link>
-          <Link to="/excel">Excel</Link>
+          <Link to="/activity">Activity</Link>
         </div>
       </div>{" "}
     </Container>

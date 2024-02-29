@@ -4,7 +4,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Ubuntu", sans-serif;
-  /* overflow-x: hidden; */
+  /* overflow: hidden; */
   /* background-color: #333; */
 }
 .header {
@@ -47,7 +47,6 @@
 .right-links a:hover {
   transform: scale(1.1);
 }
-/* Define the initial state for the text */
 a {
   position: relative;
   text-decoration: none;
@@ -76,19 +75,21 @@ a:not(:hover)::before {
 }
 /* TopPerformers.css */
 /* TopPerformers.css */
+/* TopPerformers.css */
 
 .top-performers-container {
   text-align: center;
   padding: 20px;
   background-color: rgb(248, 231, 187);
   border-radius: 8px;
-  /* margin: 20px; */
 }
 
 h2 {
   color: #0c0c0c;
-  font-size: 24px;
-  margin-bottom: 20px;
+  font-size: 36px; /* Increase font size */
+  margin-top: 2rem;
+  font-weight: bold; /* Make the text bold */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle text shadow */
 }
 
 .performers-list {
@@ -98,22 +99,23 @@ h2 {
 }
 
 .performer-card:hover {
-  transform: scale(1.05); /* Scale the card on hover */
+  transform: scale(1.05);
 }
 
 .performer-photo {
   width: 80px;
   height: 80px;
-  object-fit: scale-down; 
-  border-radius: 50%; 
-  margin: 20px auto; 
+  object-fit: cover; /* Update to cover for better photo display */
+  border-radius: 50%;
+  margin: 20px auto;
   display: block;
 }
 
 .performer-details {
   margin-top: 10px;
 }
-.mb-2{
+
+.mb-2 {
   color: rgb(0, 7, 12);
 }
 
@@ -147,62 +149,39 @@ h2 {
 
 .performer-card {
   text-align: center;
-  margin: 10px 1px;
-  transition: transform 0.1s; /* Add transition for card scaling */
+  margin: 4rem 0; /* Reduce margin for better spacing between cards */
+  transition: transform 0.1s;
+  width: 15rem;
+}
+.chart{
+  width: 500px;
+  height: 1000px;
+}
+.left-to-right {
+  animation: moveLeftToRight 1s ease-in-out;
 }
 
-/* Footer */
-.contact{
-  margin-top: 10%;
-  background-color: #9B4819;
-  color: #F4F1E8;
-  overflow-x: hidden;
-  /* margin-bottom: 5%; */
-}
-.socials{
-  margin-top: 5%;
-  margin-left: 5%;
+.right-to-left {
+  animation: moveRightToLeft 1s ease-in-out;
 }
 
-.contact-message{
-  font-size: 5.5vh;
-  padding-right: 40%;
-  margin-top: 5%;
-}
-.contact-hr{
-  color: #F4F1E8;
-  height: 3px;
-  width: 50%;
-
-}
-.footer{
-  margin-top: 5%;
-  font-size: larger;
-}
-.icon-container {
-  display: flex; /* Display the icons in a row */
-  justify-content: center; /* Center align the icons horizontally */
-  gap: 20px; /* Add space between the icons */
-  margin-top: 20px; /* Add top margin */
+@keyframes moveLeftToRight {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
 }
 
-.bi-linkedin::before {
-  margin: 2px;
-  content: "\f472";
-  font-size: 28px;
+@keyframes moveRightToLeft {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
 }
-
-.bi-github::before {
-  margin: 2px;
-  /* content: "\f472"; */
-  font-size: 28px;
-}
-
-
-
-.footer-links{
-  margin-right: 1%;
-}
-.cursor{
-  cursor: pointer;
+.performance{
+  overflow: hidden;
 }
