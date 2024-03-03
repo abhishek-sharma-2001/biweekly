@@ -1,7 +1,12 @@
 import { useState, useEffect } from "react";
 import Confetti from "react-confetti";
 import { Card, Badge } from "react-bootstrap";
-import "../App.css"; // Import your CSS file
+import "../App.css";
+import first from "../assets/1st.jpg";
+import second from "../assets/2nd.jpg";
+import third from "../assets/3rd.jpg";
+import fourth from "../assets/4th.jpg";
+import fifth from "../assets/5th.jpg";
 
 const TopPerformers = () => {
   const [isConfettiActive, setConfettiActive] = useState(true);
@@ -18,30 +23,30 @@ const TopPerformers = () => {
 
   // Your code to fetch top performers data goes here
   const topPerformersData = [
-    { rank: 1, name: "John Doe", bugScore: 150, photo: "./src/assets/1st.jpg" },
+    { rank: 1, name: "John Doe", bugScore: 150, photo: first },
     {
       rank: 2,
       name: "Jane Smith",
       bugScore: 120,
-      photo: "./src/assets/2nd.jpg",
+      photo: second,
     },
     {
       rank: 3,
       name: "Bob Johnson",
       bugScore: 100,
-      photo: "./src/assets/3rd.jpg",
+      photo: third,
     },
     {
       rank: 4,
       name: "Alice Brown",
       bugScore: 90,
-      photo: "./src/assets/4th.jpg",
+      photo: fourth,
     },
     {
       rank: 5,
       name: "Charlie Lee",
       bugScore: 80,
-      photo: "./src/assets/5th.jpg",
+      photo: fifth,
     },
   ];
 
