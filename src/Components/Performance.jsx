@@ -10,47 +10,76 @@ const BugChart = () => {
 
   useEffect(() => {
     // Pie Chart
-// Pie Chart
-const pieChartContext = pieChartRef.current.getContext("2d");
-new Chart(pieChartContext, {
-  type: "pie",
-  data: {
-    labels: ["Blocker", "Critical", "Major", "Normal", "Minor"],
-    datasets: [
-      {
-        data: [15, 25, 20, 15, 25], // Change the data values as needed
-        backgroundColor: ["#8B0000", "#FF0000", "#0000FF", "#008000", "#FFA500"], // Assign colors according to priority
+    // Pie Chart
+    const pieChartContext = pieChartRef.current.getContext("2d");
+    new Chart(pieChartContext, {
+      type: "pie",
+      data: {
+        labels: ["Blocker", "Critical", "Major", "Normal", "Minor"],
+        datasets: [
+          {
+            data: [15, 25, 20, 15, 25],
+            backgroundColor: [
+              '#8B0000',  // Dark Red
+              '#FF0000',  // Red
+              '#0000FF',  // Blue
+              '#008000',  // Green
+              '#FFA500',  // Orange
+            ],
+          },
+        ],
       },
-    ],
-  },
-});
-
-
+    });
 
     // Line Chart with Linear Regression
     const lineChartContext = lineChartRef.current.getContext("2d");
 
     const data = [
-      { x: 1, y: 10 },
-      { x: 2, y: 15 },
-      { x: 3, y: 20 },
-      { x: 4, y: 25 },
-      { x: 5, y: 30 },
-      { x: 6, y: 35 },
+      [1, 10],
+      [2, 15],
+      [3, 20],
+      [4, 25],
+      [5, 25],
+      [6, 35],
+      [7, 43],
+      [6, 55],
     ];
 
     // Calculate linear regression
     const result = regression.linear(data);
+    console.log(result);
     const regressionLine = result.points;
+    console.log(regressionLine);
+
+    const futureMonths = [8, 9, 10,11];
+    const extendedRegressionLine = result.points.concat(
+      futureMonths.map((month) => [
+        month,
+        result.equation[0] * month + result.equation[1],
+      ])
+    );
 
     new Chart(lineChartContext, {
       type: "line",
       data: {
-        labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
+        labels: [
+          "Jan",
+          "Feb",
+          "Mar",
+          "Apr",
+          "May",
+          "Jun",
+          "Jul",
+          "Aug",
+          "Sep",
+          "Oct",
+          "Nov",
+          "Dec",
+        ],
         datasets: [
           {
             label: "Bug Prediction",
-            data: regressionLine,
+            data: extendedRegressionLine,
             borderColor: "#FF6384",
             fill: false,
           },
@@ -103,7 +132,7 @@ new Chart(pieChartContext, {
             <h2>Bug Score</h2>
           </center>
           <Table bordered hover>
-            <thead className='thead-dark'>
+            <thead className="thead-dark">
               <tr>
                 <th>Domain Name</th>
                 <th>Issue Count</th>
