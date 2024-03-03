@@ -201,3 +201,6 @@ h2 {
 .performance{
   padding-bottom: 2%;
 }
+.navbar-collapse{
+  justify-content: end;
+}
