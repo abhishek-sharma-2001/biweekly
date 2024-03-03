@@ -1,18 +1,44 @@
-
-*{
+/* Reset styles */
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Ubuntu", sans-serif;
-  /* overflow: hidden; */
-  /* background-color: #333; */
 }
+
+/* Global styles */
+a {
+  position: relative;
+  text-decoration: none;
+  color: orange; /* Set your desired text color */
+  overflow: hidden;
+}
+
+/* Underline animation for links */
+a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: orange;
+  transition: width 0.5s ease;
+}
+
+a:hover::before {
+  width: 100%;
+}
+
+a:not(:hover)::before {
+  width: 0;
+}
+
+/* Header styles */
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* background-color: #333; */
-  /* color: white; */
   padding: 10px;
 }
 
@@ -47,36 +73,8 @@
 .right-links a:hover {
   transform: scale(1.1);
 }
-a {
-  position: relative;
-  text-decoration: none;
-  color: orange; /* Set your desired text color */
-  overflow: hidden;
-}
 
-/* Create a pseudo-element for the underline */
-a::before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0;
-  height: 2px;
-  background-color: orange;
-  transition: width 0.5s ease;
-}
-
-a:hover::before {
-  width: 100%;
-}
-
-a:not(:hover)::before {
-  width: 0;
-}
-/* TopPerformers.css */
-/* TopPerformers.css */
-/* TopPerformers.css */
-
+/* TopPerformers container styles */
 .top-performers-container {
   text-align: center;
   padding: 20px;
@@ -87,16 +85,23 @@ a:not(:hover)::before {
 
 h2 {
   color: #0c0c0c;
-  font-size: 36px; /* Increase font size */
+  font-size: 36px;
   margin-top: 2rem;
-  font-weight: bold; /* Make the text bold */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle text shadow */
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .performers-list {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+}
+
+.performer-card {
+  text-align: center;
+  margin: 4rem 0;
+  transition: transform 0.3s;
+  width: 15rem;
 }
 
 .performer-card:hover {
@@ -106,14 +111,10 @@ h2 {
 .performer-photo {
   width: 80px;
   height: 80px;
-  object-fit: cover; /* Update to cover for better photo display */
+  object-fit: cover;
   border-radius: 50%;
   margin: 20px auto;
   display: block;
-}
-
-.performer-details {
-  margin-top: 10px;
 }
 
 .mb-2 {
@@ -128,6 +129,7 @@ h2 {
   font-weight: bold;
 }
 
+/* Ranking colors */
 .rank-1 {
   background-color: gold;
 }
@@ -148,16 +150,7 @@ h2 {
   background-color: rgb(153, 153, 224); /* Bronze color */
 }
 
-.performer-card {
-  text-align: center;
-  margin: 4rem 0; /* Reduce margin for better spacing between cards */
-  transition: transform 0.3s;
-  width: 15rem;
-}
-.chart{
-  width: 1500px;
-  height: 1500px;
-}
+/* Animation styles */
 .left-to-right {
   animation: moveLeftToRight 1s ease-in-out;
 }
@@ -183,24 +176,32 @@ h2 {
     transform: translateX(0);
   }
 }
-.performance{
+
+/* Performance styles */
+.performance {
   overflow: hidden;
 }
-.line-chart{
+
+.line-chart {
   margin-top: 124px;
 }
+
 .bug-score {
   font-size: large;
   font-weight: bold;
   margin-bottom: 2rem;
 }
-.resize{
+
+.resize {
   max-width: 800px;
   max-height: fit-content;
 }
-.performance{
+
+.performance {
   padding-bottom: 2%;
 }
-.navbar-collapse{
+
+/* Navbar styles */
+.navbar-collapse {
   justify-content: end;
 }

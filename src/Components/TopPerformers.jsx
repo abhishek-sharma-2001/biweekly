@@ -8,6 +8,8 @@ import third from "../assets/3rd.jpg";
 import fourth from "../assets/4th.jpg";
 import fifth from "../assets/5th.jpg";
 
+
+
 const TopPerformers = () => {
   const [isConfettiActive, setConfettiActive] = useState(true);
 
