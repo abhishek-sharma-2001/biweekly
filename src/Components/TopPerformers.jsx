@@ -59,13 +59,13 @@ const TopPerformers = () => {
 
       <div className="performers-list">
         {topPerformersData.map((performer, index) => (
-          <Card key={index} className={`performer-card rank-${performer.rank} shadow`}>
+          <Card key={index} className={`performer-card rank-${performer.rank} shadow` }>
             <Card.Img
               src={performer.photo}
               alt={performer.name}
               className="performer-photo"
             />
-            <Card.Body>
+            <Card.Body className="color">
               <Badge bg={`rank-${performer.rank}`} className="mb-2">
                 Rank {performer.rank}
               </Badge>

@@ -221,3 +221,19 @@ h2 {
 .margin{
   margin-top: 12%;
 }
+.activity{
+  margin-bottom: 5%;
+}
+
+.activity-page p{
+  font-family: "Roboto", sans-serif;
+  font-weight: 390;
+} 
+.color{
+  background-color: #F4F1E8;
+}
+#root{
+  background-color: #F4F1E8;
+  height: 100vh;
+  /* width: 100vw; */
+}

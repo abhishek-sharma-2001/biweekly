@@ -1,33 +1,33 @@
-import { useEffect, useState, useRef } from 'react';
-import * as XLSX from 'xlsx';
-import { Table, Container, Row, Col } from 'react-bootstrap';
-import Chart from 'chart.js/auto';
-import regression from 'regression';
-import { read, utils, writeFile } from 'xlsx';
+import { useEffect, useState, useRef } from "react";
+import * as XLSX from "xlsx";
+import { Table, Container, Row, Col } from "react-bootstrap";
+import Chart from "chart.js/auto";
+import regression from "regression";
+// import { read, utils, writeFile } from "xlsx";
 
 const BugChart = () => {
   const pieChartRef = useRef(null);
   const lineChartRef = useRef(null);
   const barChartRef = useRef(null);
-
-  const [excelData, setExcelData] = useState([]);
+  // Read the Excel file
+  const excelFilePath = "../assets/Weekly_Feb.xlsx";
 
   useEffect(() => {
     // Pie Chart
-    const pieChartContext = pieChartRef.current.getContext('2d');
+    const pieChartContext = pieChartRef.current.getContext("2d");
     new Chart(pieChartContext, {
-      type: 'pie',
+      type: "pie",
       data: {
-        labels: ['Blocker', 'Critical', 'Major', 'Normal', 'Minor'],
+        labels: ["Blocker", "Critical", "Major", "Normal", "Minor"],
         datasets: [
           {
             data: [15, 25, 20, 15, 25],
             backgroundColor: [
-              '#8B0000', // Dark Red
-              '#FF0000', // Red
-              '#0000FF', // Blue
-              '#008000', // Green
-              '#FFA500', // Orange
+              "#8B0000", // Dark Red
+              "#FF0000", // Red
+              "#0000FF", // Blue
+              "#008000", // Green
+              "#FFA500", // Orange
             ],
           },
         ],
@@ -35,7 +35,7 @@ const BugChart = () => {
     });
 
     // Line Chart with Linear Regression
-    const lineChartContext = lineChartRef.current.getContext('2d');
+    const lineChartContext = lineChartRef.current.getContext("2d");
 
     const data = [
       [1, 10],
@@ -60,27 +60,27 @@ const BugChart = () => {
     );
 
     new Chart(lineChartContext, {
-      type: 'line',
+      type: "line",
       data: {
         labels: [
-          'Jan',
-          'Feb',
-          'Mar',
-          'Apr',
-          'May',
-          'Jun',
-          'Jul',
-          'Aug',
-          'Sep',
-          'Oct',
-          'Nov',
-          'Dec',
+          "Jan",
+          "Feb",
+          "Mar",
+          "Apr",
+          "May",
+          "Jun",
+          "Jul",
+          "Aug",
+          "Sep",
+          "Oct",
+          "Nov",
+          "Dec",
         ],
         datasets: [
           {
-            label: 'Bug Prediction',
+            label: "Bug Prediction",
             data: extendedRegressionLine,
-            borderColor: '#FF6384',
+            borderColor: "#FF6384",
             fill: false,
           },
         ],
@@ -88,51 +88,29 @@ const BugChart = () => {
     });
 
     // Bar Chart
-    const barChartContext = barChartRef.current.getContext('2d');
+    const barChartContext = barChartRef.current.getContext("2d");
 
     const barChartData = {
-      labels: ['January', 'February', 'March', 'April', 'May'],
+      labels: ["January", "February", "March", "April", "May"],
       datasets: [
         {
-          label: 'Bar Chart',
+          label: "Bar Chart",
           data: [10, 20, 15, 25, 30],
-          backgroundColor: '#00796B',
+          backgroundColor: "#00796B",
         },
       ],
     };
 
     new Chart(barChartContext, {
-      type: 'bar',
+      type: "bar",
       data: barChartData,
     });
 
-    // Read the Excel file
-    const excelFilePath = '../assets/Weekly_Feb.xlsx';
-
-    const readFile = async () => {
-      const file = await fetch(excelFilePath);
-      const arrayBuffer = await file.arrayBuffer();
-      const data = new Uint8Array(arrayBuffer);
-      const workbook = XLSX.read(data, { type: 'array' });
-
-      const sheetName = workbook.SheetNames[0];
-      const sheet = workbook.Sheets[sheetName];
-
-      const jsonData = XLSX.utils.sheet_to_json(sheet, { header: 1 });
-
-      if (jsonData.length > 1 && jsonData[0].length === jsonData[1].length) {
-        jsonData.shift();
-      }
-
-      setExcelData(jsonData);
-    };
-
-    readFile();
   }, []);
 
   return (
-    <div className="bg-img">
-      <Container fluid>
+    <div className="bg-img color">
+      <Container fluid >
         <center className="performance-chart">
           <h2 className="performance">Performance Chart</h2>
         </center>
@@ -171,13 +149,18 @@ const BugChart = () => {
                 </tr>
               </thead>
               <tbody>
-                {excelData.map((rowData, index) => (
+                {/* {excelData.map((row, index) => (
                   <tr key={index}>
-                    {rowData.map((cellData, cellIndex) => (
-                      <td key={cellIndex}>{cellData}</td>
-                    ))}
+                    <td>{row["Domain Name"]}</td>
+                    <td>{row["Issue Count"]}</td>
+                    <td>{row["Issue Score"]}</td>
+                    <td>{row["Blocker"]}</td>
+                    <td>{row["Critical"]}</td>
+                    <td>{row["Major"]}</td>
+                    <td>{row["Normal"]}</td>
+                    <td>{row["Minor"]}</td>
                   </tr>
-                ))}
+                ))} */}
               </tbody>
             </Table>
           </Col>
