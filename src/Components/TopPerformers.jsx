@@ -75,6 +75,7 @@ const TopPerformers = () => {
           </Card>
         ))}
       </div>
+      <div className="take-space"></div>
     </div>
   );
 };
