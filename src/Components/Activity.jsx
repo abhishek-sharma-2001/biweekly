@@ -14,7 +14,7 @@ import NewProgramManager from "../assets/NewProgramManager.png"
 const Activity = () => {
   return (
     <div>
-      <Container className="activity-page">
+      <Container><Container className="activity-page">
         <center className="team-activity">
           <h2 className="activity">Team Activites Performed</h2>
         </center>
@@ -154,7 +154,8 @@ const Activity = () => {
             </div>
           </Col>
         </Row>
-      </Container>
+      </Container></Container>
+      
     </div>
   );
 };
