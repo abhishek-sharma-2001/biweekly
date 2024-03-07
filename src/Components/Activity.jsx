@@ -83,7 +83,7 @@ const Activity = () => {
           <Col md={6}>
             <div>
               <h3 className="info-align">KT to New Members</h3>
-              <p>25 new members are added to the team and provided the knowledge Transfer to get going with the team</p>
+              <p><b>25</b> new members are added to the team and provided the knowledge Transfer to get going with the team</p>
             </div>
           </Col>
           <Col md={6}>
@@ -121,7 +121,7 @@ const Activity = () => {
             <div>
               <h3 className="info-align">New TeamLeads Assigned</h3>
               <p>
-                Anagha Shinde and S K Shivam are assigned as our new Team Leads.
+                <b>Ms. Anagha Shinde</b> and <b>Mr. S K Shivam</b> are assigned as our new Team Leads.
               </p>
             </div>
           </Col>
