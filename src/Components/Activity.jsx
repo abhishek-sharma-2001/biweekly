@@ -1,6 +1,15 @@
 import React from "react";
 import { Row, Col, Container } from "react-bootstrap";
 import "../App.css"; // Import the CSS file for styling
+import testing from "../assets/testing.png"
+import retesting from "../assets/testing.png"
+import testing from "../assets/testing.png"
+import testing from "../assets/testing.png"
+import testing from "../assets/testing.png"
+import testing from "../assets/testing.png"
+import testing from "../assets/testing.png"
+
+
 
 const Activity = () => {
   return (
