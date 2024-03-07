@@ -51,10 +51,10 @@ const TopPerformers = () => {
       photo: fifth,
     },
   ];
-
+  // const backgroundImage = "url('home-background-biweekly.jpeg')";
   return (
     <div className="top-performers-container">
-      <h2>CONGRATULATIONS TO THE TOP 5 BUG HUNTERS</h2>
+      <h2 className="title-top-performer">CONGRATULATIONS TO THE TOP 5 BUG HUNTERS</h2>
       {isConfettiActive && <Confetti />}
 
       <div className="performers-list">

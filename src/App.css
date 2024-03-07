@@ -13,6 +13,13 @@ a {
   color: orange; /* Set your desired text color */
   overflow: hidden;
 }
+/* body{
+  background-image: url("./assets/home-background-biweekly.jpeg");
+  background-size:100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+} */
 
 /* Underline animation for links */
 a::before {
@@ -78,9 +85,10 @@ a:not(:hover)::before {
 .top-performers-container {
   text-align: center;
   padding: 20px;
-  background-color: rgb(248, 231, 187);
-  border-radius: 8px;
+  /* background-color: rgb(248, 231, 187); */
+  /* border-radius: 8px; */
   padding-top: 40px;
+  
 }
 
 h2 {
@@ -102,6 +110,7 @@ h2 {
   margin: 4rem 0;
   transition: transform 0.3s;
   width: 15rem;
+  /* opacity: 1; */
 }
 
 .performer-card:hover {
@@ -204,4 +213,11 @@ h2 {
 /* Navbar styles */
 .navbar-collapse {
   justify-content: end;
+}
+.title-top-performer{
+  padding-bottom: 2%;
+}
+
+.margin{
+  margin-top: 12%;
 }
