@@ -1,4 +1,3 @@
-import React from "react";
 import { Row, Col, Container } from "react-bootstrap";
 import "../App.css"; // Import the CSS file for styling
 import testing from "../assets/testing.png";
@@ -30,7 +29,7 @@ const Activity = () => {
               <div>
                 <h3 className="info-align">Testing</h3>
                 <p>
-                  We have performed testing for <b>MP's Corner</b>,{" "}
+                  We have performed testing for <b>MP&apos;s Corner</b>,{" "}
                   <b>Nari Shakti</b> as well as <b>Digital India</b> by using
                   Android, iOS, Windows and Mac
                 </p>
@@ -69,7 +68,7 @@ const Activity = () => {
             <Col md={6}>
               <div>
                 <h3 className="info-align">
-                  PDT (Post Deployment Testing) for MP's Corner
+                  PDT (Post Deployment Testing) for MP&apos;s Corner
                 </h3>
                 <p>
                   Anagha, Anushree, Shivam, Tanvi, Khushi, Naman, Harshada,
