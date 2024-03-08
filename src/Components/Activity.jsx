@@ -150,7 +150,7 @@ const Activity = () => {
               <h3 className="info-align">New Program Manager Assigned and 2 new Members Added</h3>
               <p>
                <b>Rahul Bhandari</b> sir has been appointed as our new Program
-                Manager, and 2 new members named <b>Ankita Lokhande</b> and <b>Payas Patel</b> were added to our group.
+                Manager, and 2 new members named <b>Ankita Roy</b> and <b>Payas Patel</b> were added to our group.
               </p>
             </div>
           </Col>

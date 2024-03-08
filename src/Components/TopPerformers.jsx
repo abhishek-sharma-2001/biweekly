@@ -2,11 +2,11 @@ import { useState, useEffect } from "react";
 import Confetti from "react-confetti";
 import { Card, Badge } from "react-bootstrap";
 import "../App.css";
-import first from "../assets/1st.jpg";
-import second from "../assets/2nd.jpg";
-import third from "../assets/3rd.jpg";
-import fourth from "../assets/4th.jpg";
-import fifth from "../assets/5th.jpg";
+import first from "../assets/1st.png";
+import second from "../assets/2nd.png";
+import third from "../assets/3rd.png";
+import fourth from "../assets/4th.png";
+import fifth from "../assets/5th.png";
 
 
 

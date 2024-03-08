@@ -143,14 +143,14 @@ const BugChart = () => {
               <Table striped bordered hover responsive>
                 <thead>
                   <tr>
-                    <td>Domain Name</td>
-                    <td>Issue Count</td>
-                    <td>Issue Score</td>
-                    <td>Blocker</td>
-                    <td>Critical</td>
-                    <td>Major</td>
-                    <td>Normal</td>
-                    <td>Minor</td>
+                    <td><b>Domain Name</b></td>
+                    <td><b>Issue Count</b></td>
+                    <td><b>Issue Score</b></td>
+                    <td><b>Blocker</b></td>
+                    <td><b>Critical</b></td>
+                    <td><b>Major</b></td>
+                    <td><b>Normal</b></td>
+                    <td><b>Minor</b></td>
                   </tr>
                 </thead>
                 <tbody>
