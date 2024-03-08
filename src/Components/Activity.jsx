@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Row, Col, Container } from "react-bootstrap";
 import "../App.css"; // Import the CSS file for styling
 import testing from "../assets/testing.png";
@@ -7,8 +8,16 @@ import New_member from "../assets/New_Members.png";
 import Senior_release from "../assets/Senior_released.png";
 import TeamLead_assign from "../assets/TeamLead_assign.png";
 import NewProgramManager from "../assets/NewProgramManager.png";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Activity = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 800, // Specify the animation duration
+      once: true, // Set to true to trigger the animation only once
+    });
+  }, []);
   return (
     <div>
       <Container>
@@ -17,7 +26,7 @@ const Activity = () => {
             <h2 className="activity">Team Activites Performed</h2>
           </center>
           <Row>
-            <Col md={6}>
+            <Col md={6} data-aos="fade-right">
               <img
                 className="left-to-right img-fluid"
                 src={testing}
@@ -47,7 +56,7 @@ const Activity = () => {
                 </p>
               </div>
             </Col>
-            <Col md={6}>
+            <Col md={6} data-aos="fade-left">
               <img
                 className="right-to-left img-fluid"
                 src={retesting}
@@ -58,7 +67,7 @@ const Activity = () => {
 
           {/* Section 3 */}
           <Row>
-            <Col md={6}>
+            <Col md={6} data-aos="fade-right">
               <img
                 className="left-to-right img-fluid"
                 src={PDT}
@@ -91,7 +100,7 @@ const Activity = () => {
                 </p>
               </div>
             </Col>
-            <Col md={6}>
+            <Col md={6} data-aos="fade-left">
               <img
                 className="right-to-left img-fluid"
                 src={New_member}
@@ -102,7 +111,7 @@ const Activity = () => {
 
           {/* Section 5 */}
           <Row>
-            <Col md={6}>
+            <Col md={6} data-aos="fade-right">
               <img
                 className="left-to-right img-fluid"
                 src={Senior_release}
@@ -133,7 +142,7 @@ const Activity = () => {
                 </p>
               </div>
             </Col>
-            <Col md={6}>
+            <Col md={6} data-aos="fade-left">
               <img
                 className="right-to-left img-fluid"
                 src={TeamLead_assign}
@@ -145,7 +154,7 @@ const Activity = () => {
 
           {/* Section 7 */}
           <Row>
-            <Col md={6}>
+            <Col md={6} data-aos="fade-right">
               <img
                 className="left-to-right img-fluid"
                 src={NewProgramManager}
