@@ -25,29 +25,29 @@ const TopPerformers = () => {
 
   // Your code to fetch top performers data goes here
   const topPerformersData = [
-    { rank: 1, name: "John Doe", bugScore: 150, photo: first },
+    { rank: 1, name: "Mrunali Chalke", bugScore: 48, photo: first },
     {
       rank: 2,
-      name: "Jane Smith",
-      bugScore: 120,
+      name: "Anushree Shukla",
+      bugScore: 45,
       photo: second,
     },
     {
       rank: 3,
-      name: "Bob Johnson",
-      bugScore: 100,
+      name: "Vishnu Menon",
+      bugScore: 45,
       photo: third,
     },
     {
       rank: 4,
-      name: "Alice Brown",
-      bugScore: 90,
+      name: "Kartik Patil",
+      bugScore: 39,
       photo: fourth,
     },
     {
       rank: 5,
-      name: "Charlie Lee",
-      bugScore: 80,
+      name: "Anagha Shinde",
+      bugScore: 38,
       photo: fifth,
     },
   ];

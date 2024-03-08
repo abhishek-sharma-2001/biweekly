@@ -170,7 +170,17 @@ h2 {
     transform: translateX(0) rotate(360deg); /* Final position and rotation */
   }
 }
-
+.right-to-left{
+  animation: AntirotateClockwise 1s ease-in-out;
+}
+@keyframes AntirotateClockwise {
+  from {
+    transform: translateX(0) rotate(360deg); /* Initial position and rotation */
+  }
+  to {
+    transform: translateX(-100) rotate(0deg); /* Final position and rotation */
+  }
+}
 
 
 /* Performance styles */

@@ -13,6 +13,8 @@
     "bootstrap": "^5.3.3",
     "chart.js": "^4.4.2",
     "chartjs": "^0.3.24",
+    "csv-parser": "^3.0.0",
+    "papaparse": "^5.4.1",
     "react": "^18.2.0",
     "react-bootstrap": "^2.10.1",
     "react-confetti": "^6.1.0",

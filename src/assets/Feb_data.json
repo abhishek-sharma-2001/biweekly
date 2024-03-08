@@ -1,0 +1,392 @@
+﻿[
+    {
+        "Domain Name": "Mrunali.Chalke",
+        "Issue Count": "8",
+        "Issue Score": "48",
+        "Blocker": "1",
+        "Critical": "3",
+        "Major": "2",
+        "Normal": "1",
+        "Minor": "1"
+    },
+    {
+        "Domain Name": "Anushree1.Shukla",
+        "Issue Count": "10",
+        "Issue Score": "45",
+        "Blocker": "",
+        "Critical": "1",
+        "Major": "5",
+        "Normal": "4",
+        "Minor": ""
+    },
+    {
+        "Domain Name": "Vishnu1.Menon",
+        "Issue Count": "7",
+        "Issue Score": "45",
+        "Blocker": "",
+        "Critical": "4",
+        "Major": "2",
+        "Normal": "1",
+        "Minor": ""
+    },
+    {
+        "Domain Name": "Kartik2.Patil",
+        "Issue Count": "6",
+        "Issue Score": "39",
+        "Blocker": "",
+        "Critical": "3",
+        "Major": "3",
+        "Normal": "",
+        "Minor": ""
+    },
+    {
+        "Domain Name": "Anagha.Shinde",
+        "Issue Count": "7",
+        "Issue Score": "38",
+        "Blocker": "",
+        "Critical": "3",
+        "Major": "1",
+        "Normal": "3",
+        "Minor": ""
+    },
+    {
+        "Domain Name": "Sk.Shivam",
+        "Issue Count": "6",
+        "Issue Score": "37",
+        "Blocker": "1",
+        "Critical": "2",
+        "Major": "1",
+        "Normal": "2",
+        "Minor": ""
+    },
+    {
+        "Domain Name": "Sumit3.Patra",
+        "Issue Count": "5",
+        "Issue Score": "32",
+        "Blocker": "",
+        "Critical": "3",
+        "Major": "1",
+        "Normal": "1",
+        "Minor": ""
+    },
+    {
+        "Domain Name": "Atharva.Golapkar",
+        "Issue Count": "5",
+        "Issue Score": "30",
+        "Blocker": "",
+        "Critical": "3",
+        "Major": "",
+        "Normal": "2",
+        "Minor": ""
+    },
+    {
+        "Domain Name": "Ritesh.Guleria",
+        "Issue Count": "5",
+        "Issue Score": "25",
+        "Blocker": "",
+        "Critical": "2",
+        "Major": "",
+        "Normal": "3",
+        "Minor": ""
+    },
+    {
+        "Domain Name": "Harshada.Gawade",
+        "Issue Count": "7",
+        "Issue Score": "25",
+        "Blocker": "",
+        "Critical": "",
+        "Major": "2",
+        "Normal": "5",
+        "Minor": ""
+    },
+    {
+        "Domain Name": "Avinash10.Gupta",
+        "Issue Count": "6",
+        "Issue Score": "24",
+        "Blocker": "",
+        "Critical": "",
+        "Major": "4",
+        "Normal": "1",
+        "Minor": "1"
+    },
+    {
+        "Domain Name": "Sydney.Gomes",
+        "Issue Count": "4",
+        "Issue Score": "23",
+        "Blocker": "",
+        "Critical": "1",
+        "Major": "3",
+        "Normal": "",
+        "Minor": ""
+    },
+    {
+        "Domain Name": "Anjali.Tank",
+        "Issue Count": "6",
+        "Issue Score": "23",
+        "Blocker": "",
+        "Critical": "1",
+        "Major": "1",
+        "Normal": "3",
+        "Minor": "1"
+    },
+    {
+        "Domain Name": "Naman.Malani",
+        "Issue Count": "2",
+        "Issue Score": "18",
+        "Blocker": "1",
+        "Critical": "1",
+        "Major": "",
+        "Normal": "",
+        "Minor": ""
+    },
+    {
+        "Domain Name": "Amreen.Siddiqui",
+        "Issue Count": "3",
+        "Issue Score": "16",
+        "Blocker": "",
+        "Critical": "1",
+        "Major": "1",
+        "Normal": "1",
+        "Minor": ""
+    },
+    {
+        "Domain Name": "Akshay.Mule",
+        "Issue Count": "3",
+        "Issue Score": "15",
+        "Blocker": "",
+        "Critical": "",
+        "Major": "3",
+        "Normal": "",
+        "Minor": ""
+    },
+    {
+        "Domain Name": "Aniket.Aher",
+        "Issue Count": "2",
+        "Issue Score": "13",
+        "Blocker": "",
+        "Critical": "1",
+        "Major": "1",
+        "Normal": "",
+        "Minor": ""
+    },
+    {
+        "Domain Name": "Nisha1.Giri",
+        "Issue Count": "2",
+        "Issue Score": "13",
+        "Blocker": "1",
+        "Critical": "",
+        "Major": "",
+        "Normal": "1",
+        "Minor": ""
+    },
+    {
+        "Domain Name": "Amit12.Jha",
+        "Issue Count": "5",
+        "Issue Score": "11",
+        "Blocker": "",
+        "Critical": "",
+        "Major": "",
+        "Normal": "3",
+        "Minor": "2"
+    },
+    {
+        "Domain Name": "Piyush9.Pandey",
+        "Issue Count": "2",
+        "Issue Score": "10",
+        "Blocker": "",
+        "Critical": "",
+        "Major": "2",
+        "Normal": "",
+        "Minor": ""
+    },
+    {
+        "Domain Name": "Tanvi.Pathare",
+        "Issue Count": "3",
+        "Issue Score": "9",
+        "Blocker": "",
+        "Critical": "",
+        "Major": "",
+        "Normal": "3",
+        "Minor": ""
+    },
+    {
+        "Domain Name": "Dhiraj.Kunder",
+        "Issue Count": "3",
+        "Issue Score": "9",
+        "Blocker": "",
+        "Critical": "",
+        "Major": "",
+        "Normal": "3",
+        "Minor": ""
+    },
+    {
+        "Domain Name": "Ashutosh21.Pandey",
+        "Issue Count": "1",
+        "Issue Score": "8",
+        "Blocker": "",
+        "Critical": "1",
+        "Major": "",
+        "Normal": "",
+        "Minor": ""
+    },
+    {
+        "Domain Name": "Atharv.Deshpande",
+        "Issue Count": "2",
+        "Issue Score": "8",
+        "Blocker": "",
+        "Critical": "",
+        "Major": "1",
+        "Normal": "1",
+        "Minor": ""
+    },
+    {
+        "Domain Name": "Khushi.Bohre",
+        "Issue Count": "1",
+        "Issue Score": "8",
+        "Blocker": "",
+        "Critical": "1",
+        "Major": "",
+        "Normal": "",
+        "Minor": ""
+    },
+    {
+        "Domain Name": "Sushant.Yelurkar",
+        "Issue Count": "4",
+        "Issue Score": "8",
+        "Blocker": "",
+        "Critical": "",
+        "Major": "",
+        "Normal": "2",
+        "Minor": "2"
+    },
+    {
+        "Domain Name": "Tadi.Teja",
+        "Issue Count": "1",
+        "Issue Score": "8",
+        "Blocker": "",
+        "Critical": "1",
+        "Major": "",
+        "Normal": "",
+        "Minor": ""
+    },
+    {
+        "Domain Name": "Abhishek113.Sharma",
+        "Issue Count": "2",
+        "Issue Score": "6",
+        "Blocker": "",
+        "Critical": "",
+        "Major": "1",
+        "Normal": "",
+        "Minor": "1"
+    },
+    {
+        "Domain Name": "Prathwikumar.S",
+        "Issue Count": "2",
+        "Issue Score": "6",
+        "Blocker": "",
+        "Critical": "",
+        "Major": "1",
+        "Normal": "",
+        "Minor": "1"
+    },
+    {
+        "Domain Name": "Paras3.Shah",
+        "Issue Count": "1",
+        "Issue Score": "3",
+        "Blocker": "",
+        "Critical": "",
+        "Major": "",
+        "Normal": "1",
+        "Minor": ""
+    },
+    {
+        "Domain Name": "Manas Ghodinde",
+        "Issue Count": "1",
+        "Issue Score": "3",
+        "Blocker": "",
+        "Critical": "",
+        "Major": "",
+        "Normal": "1",
+        "Minor": ""
+    },
+    {
+        "Domain Name": "Khushi.Nigam",
+        "Issue Count": "1",
+        "Issue Score": "1",
+        "Blocker": "",
+        "Critical": "",
+        "Major": "",
+        "Normal": "",
+        "Minor": "1"
+    },
+    {
+        "Domain Name": "Sanya.Vishwakarma",
+        "Issue Count": "1",
+        "Issue Score": "1",
+        "Blocker": "",
+        "Critical": "",
+        "Major": "",
+        "Normal": "",
+        "Minor": "1"
+    },
+    {
+        "Domain Name": "Bhoomika.Verma",
+        "Issue Count": "0",
+        "Issue Score": "0",
+        "Blocker": "",
+        "Critical": "",
+        "Major": "",
+        "Normal": "",
+        "Minor": ""
+    },
+    {
+        "Domain Name": "Juhi1.Yadav",
+        "Issue Count": "0",
+        "Issue Score": "0",
+        "Blocker": "",
+        "Critical": "",
+        "Major": "",
+        "Normal": "",
+        "Minor": ""
+    },
+    {
+        "Domain Name": "Muditya.Raghav",
+        "Issue Count": "0",
+        "Issue Score": "0",
+        "Blocker": "",
+        "Critical": "",
+        "Major": "",
+        "Normal": "",
+        "Minor": ""
+    },
+    {
+        "Domain Name": "Nancy.Nema",
+        "Issue Count": "0",
+        "Issue Score": "0",
+        "Blocker": "",
+        "Critical": "",
+        "Major": "",
+        "Normal": "",
+        "Minor": ""
+    },
+    {
+        "Domain Name": "Prateek2.Pathak",
+        "Issue Count": "0",
+        "Issue Score": "0",
+        "Blocker": "",
+        "Critical": "",
+        "Major": "",
+        "Normal": "",
+        "Minor": ""
+    },
+    {
+        "Domain Name": "",
+        "Issue Count": "",
+        "Issue Score": "",
+        "Blocker": "",
+        "Critical": "",
+        "Major": "",
+        "Normal": "",
+        "Minor": ""
+    }
+]
