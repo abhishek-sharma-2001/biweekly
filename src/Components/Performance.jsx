@@ -21,7 +21,7 @@ const BugChart = () => {
         labels: ["Blocker", "Critical", "Major", "Normal", "Minor"],
         datasets: [
           {
-            data: [15, 25, 20, 15, 25],
+            data: [4, 32, 35, 42, 11],
             backgroundColor: [
               "#8B0000", // Dark Red
               "#FF0000", // Red

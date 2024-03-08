@@ -24,6 +24,7 @@ const Activity = () => {
               className="left-to-right"
               src={testing}
               alt="Left Image"
+              width={470}
             />
           </Col>
           <Col md={6}>
