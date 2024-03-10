@@ -14,7 +14,7 @@ import "aos/dist/aos.css";
 const Activity = () => {
   useEffect(() => {
     AOS.init({
-      duration: 800, // Specify the animation duration
+      duration: 1000, // Specify the animation duration
       once: true, // Set to true to trigger the animation only once
     });
   }, []);
