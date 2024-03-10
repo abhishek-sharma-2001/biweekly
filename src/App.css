@@ -80,7 +80,6 @@ a:not(:hover)::before {
   padding: 20px;
   padding-top: 20px;
   height: 90vh;
-  overflow: hidden;
 }
 
 h2 {
