@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import Confetti from "react-confetti";
 import { Card, Badge } from "react-bootstrap";
 import "../App.css";
+import axios from "axios";
 import first from "../assets/1st.png";
 import second from "../assets/2nd.png";
 import third from "../assets/3rd.png";
@@ -12,45 +13,31 @@ import fifth from "../assets/5th.png";
 
 const TopPerformers = () => {
   const [isConfettiActive, setConfettiActive] = useState(true);
+  const [topPerformersData, setTopPerformersData] = useState([]);
+  const rankImages = [first, second, third, fourth, fifth];
 
   useEffect(() => {
-    // Stop confetti after 3 seconds
+    // Fetch top performers data from the API
+    const fetchTopPerformersData = async () => {
+      try {
+        const response = await axios.get('https://api.jsonbin.io/v3/b/65ed574c266cfc3fde964421');
+        setTopPerformersData(response.data.record.slice(0, 5));
+      } catch (error) {
+        console.error('Error fetching top performers data:', error);
+      }
+    };
+
+    // Stop confetti after 4 seconds
     const timeoutId = setTimeout(() => {
       setConfettiActive(false);
     }, 4000);
 
+    // Fetch data when the component mounts
+    fetchTopPerformersData();
+
     // Clear the timeout on component unmount
     return () => clearTimeout(timeoutId);
   }, []);
-
-  // Your code to fetch top performers data goes here
-  const topPerformersData = [
-    { rank: 1, name: "Mrunali Chalke", bugScore: 48, photo: first },
-    {
-      rank: 2,
-      name: "Anushree Shukla",
-      bugScore: 45,
-      photo: second,
-    },
-    {
-      rank: 3,
-      name: "Vishnu Menon",
-      bugScore: 45,
-      photo: third,
-    },
-    {
-      rank: 4,
-      name: "Kartik Patil",
-      bugScore: 39,
-      photo: fourth,
-    },
-    {
-      rank: 5,
-      name: "Anagha Shinde",
-      bugScore: 38,
-      photo: fifth,
-    },
-  ];
   // const backgroundImage = "url('home-background-biweekly.jpeg')";
   return (
     <div className="top-performers-container">
@@ -59,24 +46,22 @@ const TopPerformers = () => {
 
       <div className="performers-list">
         {topPerformersData.map((performer, index) => (
-          <Card key={index} className={`performer-card rank-${performer.rank} shadow` }>
-            <Card.Img
-              src={performer.photo}
-              alt={performer.name}
-              className="performer-photo"
-            />
+          <Card key={index} className={`performer-card rank-${index + 1} shadow`}>
+            <Card.Img src={rankImages[index]} alt={performer['Domain Name']} className="performer-photo" />
             <Card.Body className="color">
-              <Badge bg={`rank-${performer.rank}`} className="mb-2">
-                Rank {performer.rank}
+              <Badge bg={`rank-${index + 1}`} className="mb-2">
+                Rank {index + 1}
               </Badge>
-              <Card.Title>{performer.name}</Card.Title>
-              <Card.Text>Bug Score: {performer.bugScore}</Card.Text>
+              <Card.Title>{performer['Domain Name']}</Card.Title>
+              <Card.Text>
+                Bug Score: {performer['Issue Score']}
+              </Card.Text>
             </Card.Body>
           </Card>
         ))}
       </div>
       <div className="take-space"></div>
-    </div>
+    </div> 
   );
 };
 

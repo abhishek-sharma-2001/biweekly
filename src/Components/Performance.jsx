@@ -1,22 +1,14 @@
 import { useEffect ,useRef } from "react";
-import { Table, Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import Chart from "chart.js/auto";
 import regression from "regression";
 import "../App.css";
 import JsonTable from "./JsonTable";
-// import JsonTable from './JsonTable';
-
-// import { read, utils, writeFile } from "xlsx";
 
 const BugChart = () => {
   const pieChartRef = useRef(null);
   const lineChartRef = useRef(null);
   const barChartRef = useRef(null);
-  // const [data, setData] = useState([]);
-  // const [jsonData, setJsonData] = useState([]);
-
-  // Read the Excel file
-  // const excelFilePath = "../assets/Weekly_Feb.xlsx";
 
   useEffect(() => {
     // Pie Chart
@@ -140,14 +132,9 @@ const BugChart = () => {
             <center className="bug-score">
               <h2 className="margin">Bug Score</h2>
             </center>
-            {/* <CsvTable /> */}
             <center>
               <JsonTable />
             </center>
-            {/* <Table className="Table">
-            
-            </Table> */}
-            {/* <JsonTable jsonData={jsonData} /> */}
           </Col>
         </Row>
       </Container>

@@ -10,16 +10,9 @@
 a {
   position: relative;
   text-decoration: none;
-  color: orange; /* Set your desired text color */
+  color: orange; /* Text color */
   overflow: hidden;
 }
-/* body{
-  background-image: url("./assets/home-background-biweekly.jpeg");
-  background-size:100%;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 100vh;
-} */
 
 /* Underline animation for links */
 a::before {
@@ -85,12 +78,9 @@ a:not(:hover)::before {
 .top-performers-container {
   text-align: center;
   padding: 20px;
-  /* background-color: rgb(248, 231, 187); */
-  /* border-radius: 8px; */
   padding-top: 20px;
   height: 90vh;
   overflow: hidden;
-  
 }
 
 h2 {
@@ -112,7 +102,6 @@ h2 {
   margin: 4rem 0;
   transition: transform 0.3s;
   width: 15rem;
-  /* opacity: 1; */
 }
 
 .performer-card:hover {
@@ -154,11 +143,11 @@ h2 {
 }
 
 .rank-4 {
-  background-color: greenyellow; /* Bronze color */
+  background-color: greenyellow; 
 }
 
 .rank-5 {
-  background-color: rgb(153, 153, 224); /* Bronze color */
+  background-color: rgb(153, 153, 224); 
 }
 
 /* Performance styles */
@@ -189,6 +178,7 @@ h2 {
 .navbar-collapse {
   justify-content: end;
 }
+
 .title-top-performer{
   padding-bottom: 2%;
 }
@@ -196,6 +186,7 @@ h2 {
 .margin{
   margin-top: 12%;
 }
+
 .activity{
   margin-bottom: 5%;
 }
@@ -204,30 +195,27 @@ h2 {
   font-family: "Roboto", sans-serif;
   font-weight: 390;
 } 
+
 .color{
   background-color: #F4F1E8;
 }
+
 #root{
   background-color: #F4F1E8;
-
 }
+
 .take-space{
   margin-top: 4.5%;
-  /* scroll-behavior: smooth; */
 }
-/* .right-to-left ,  .left-to-right{
-  width: 500px;
-  height: 500px;
-} */
+
 .info-align{
-  /* text-align: center; */
   margin-top: 25%;
 }
+
 .activity-page{
-  /* margin-top: 5%; */
   padding: 0 5%;
 }
+
 .activity-page p{
   margin-top: 5%;
-  /* padding: 5%; */
 }
