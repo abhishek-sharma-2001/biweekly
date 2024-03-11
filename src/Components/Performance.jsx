@@ -19,7 +19,7 @@ const BugChart = () => {
         labels: ["Blocker", "Critical", "Major", "Normal", "Minor"],
         datasets: [
           {
-            data: [4, 32, 35, 42, 11],
+            data: [1, 12, 18, 30, 15],
             backgroundColor: [
               "#8B0000", // Dark Red
               "#FF0000", // Red
@@ -36,20 +36,15 @@ const BugChart = () => {
     const lineChartContext = lineChartRef.current.getContext("2d");
 
     const data = [
-      [1, 10],
-      [2, 15],
-      [3, 20],
-      [4, 25],
-      [5, 25],
-      [6, 35],
-      [7, 43],
-      [6, 55],
+      [1, 99],
+      [2, 116],
+      [3, 76],
     ];
 
     const result = regression.linear(data);
     // const regressionLine = result.points;
 
-    const futureMonths = [8, 9, 10, 11];
+    const futureMonths = [4];
     const extendedRegressionLine = result.points.concat(
       futureMonths.map((month) => [
         month,
@@ -61,18 +56,10 @@ const BugChart = () => {
       type: "line",
       data: {
         labels: [
-          "Jan",
-          "Feb",
-          "Mar",
-          "Apr",
-          "May",
-          "Jun",
-          "Jul",
-          "Aug",
-          "Sep",
-          "Oct",
-          "Nov",
-          "Dec",
+          "22 Dec - 23 Jan",
+          "24 Jan - 19 Feb",
+          "20 Feb - 19 Mar",
+          "20 Mar - 20 April",
         ],
         datasets: [
           {
@@ -89,11 +76,11 @@ const BugChart = () => {
     const barChartContext = barChartRef.current.getContext("2d");
 
     const barChartData = {
-      labels: ["January", "February", "March", "April", "May"],
+      labels: ["22 Dec - 23 Jan", "24 Jan - 19 Feb", "20 Feb - 19 Mar"],
       datasets: [
         {
           label: "Bar Chart",
-          data: [10, 20, 15, 25, 30],
+          data: [99, 116, 76],
           backgroundColor: "#00796B",
         },
       ],
