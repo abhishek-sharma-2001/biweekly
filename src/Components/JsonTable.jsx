@@ -1,9 +1,11 @@
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Table } from 'react-bootstrap';
 
 const JsonTable = () => {
   const [data, setData] = useState([]);
+  const [sortBy, setSortBy] = useState(null);
+  const [sortOrder, setSortOrder] = useState('asc');
 
   useEffect(() => {
     const fetchData = async () => {
@@ -18,23 +20,45 @@ const JsonTable = () => {
     fetchData();
   }, []);
 
+  const handleSort = (column) => {
+    if (sortBy === column) {
+      setSortOrder(sortOrder === 'asc' ? 'desc' : 'asc');
+    } else {
+      setSortBy(column);
+      setSortOrder('asc');
+    }
+  };
+
+  const sortedData = data.sort((a, b) => {
+    if (!sortBy) return 0;
+
+    const aValue = a[sortBy];
+    const bValue = b[sortBy];
+
+    if (sortOrder === 'asc') {
+      return aValue.localeCompare(bValue);
+    } else {
+      return bValue.localeCompare(aValue);
+    }
+  });
+
   return (
     <div>
       <Table striped bordered hover>
         <thead>
           <tr>
-            <th>Domain Name</th>
-            <th>Issue Count</th>
-            <th>Issue Score</th>
-            <th>Blocker</th>
-            <th>Critical</th>
-            <th>Major</th>
-            <th>Normal</th>
-            <th>Minor</th>
+            <th onClick={() => handleSort('Domain Name')} style={{ cursor: 'pointer' }}>Domain Name</th>
+            <th onClick={() => handleSort('Issue Count')} style={{ cursor: 'pointer' }}>Issue Count</th>
+            <th onClick={() => handleSort('Issue Score')} style={{ cursor: 'pointer' }}>Issue Score</th>
+            <th onClick={() => handleSort('Blocker')} style={{ cursor: 'pointer' }}>Blocker</th>
+            <th onClick={() => handleSort('Critical')} style={{ cursor: 'pointer' }}>Critical</th>
+            <th onClick={() => handleSort('Major')} style={{ cursor: 'pointer' }}>Major</th>
+            <th onClick={() => handleSort('Normal')} style={{ cursor: 'pointer' }}>Normal</th>
+            <th onClick={() => handleSort('Minor')} style={{ cursor: 'pointer' }}>Minor</th>
           </tr>
         </thead>
         <tbody>
-          {data.map(item => (
+          {sortedData.map(item => (
             <tr key={item["Domain Name"]}>
               <td>{item["Domain Name"]}</td>
               <td>{item["Issue Count"]}</td>

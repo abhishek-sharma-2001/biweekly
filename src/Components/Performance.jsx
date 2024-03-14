@@ -2,6 +2,7 @@ import { useEffect ,useRef } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Chart from "chart.js/auto";
 import regression from "regression";
+// import polynomialRegression from "regression-polynomial";
 import "../App.css";
 import JsonTable from "./JsonTable";
 
