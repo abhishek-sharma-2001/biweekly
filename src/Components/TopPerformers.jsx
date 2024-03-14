@@ -20,7 +20,7 @@ const TopPerformers = () => {
     // Fetch top performers data from the API
     const fetchTopPerformersData = async () => {
       try {
-        const response = await axios.get('https://api.jsonbin.io/v3/b/65ed574c266cfc3fde964421');
+        const response = await axios.get('https://api.jsonbin.io/v3/b/65f2951b266cfc3fde982013');
         setTopPerformersData(response.data.record.slice(0, 5));
       } catch (error) {
         console.error('Error fetching top performers data:', error);
