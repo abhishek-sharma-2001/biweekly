@@ -79,7 +79,7 @@ a:not(:hover)::before {
   text-align: center;
   padding: 20px;
   padding-top: 20px;
-  height: 90vh;
+  height: 100%;
 }
 
 h2 {
@@ -217,4 +217,7 @@ h2 {
 
 .activity-page p{
   margin-top: 5%;
+}
+.padding-bottom{
+  padding-top: 27%;
 }

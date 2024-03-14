@@ -34,54 +34,54 @@ const BugChart = () => {
     });
 
     // Line Chart with Linear Regression
-    const lineChartContext = lineChartRef.current.getContext("2d");
+    // const lineChartContext = lineChartRef.current.getContext("2d");
 
-    const data = [
-      [1, 99],
-      [2, 116],
-      [3, 76],
-    ];
+    // const data = [
+    //   [1, 99],
+    //   [2, 116],
+    //   [3, 76],
+    // ];
 
-    const result = regression.linear(data);
-    // const regressionLine = result.points;
+    // const result = regression.linear(data);
+    // // const regressionLine = result.points;
 
-    const futureMonths = [4];
-    const extendedRegressionLine = result.points.concat(
-      futureMonths.map((month) => [
-        month,
-        result.equation[0] * month + result.equation[1],
-      ])
-    );
+    // const futureMonths = [4];
+    // const extendedRegressionLine = result.points.concat(
+    //   futureMonths.map((month) => [
+    //     month,
+    //     result.equation[0] * month + result.equation[1],
+    //   ])
+    // );
 
-    new Chart(lineChartContext, {
-      type: "line",
-      data: {
-        labels: [
-          "22 Dec - 23 Jan",
-          "24 Jan - 19 Feb",
-          "20 Feb - 19 Mar",
-          "20 Mar - 20 April",
-        ],
-        datasets: [
-          {
-            label: "Bug Prediction",
-            data: extendedRegressionLine,
-            borderColor: "#FF6384",
-            fill: false,
-          },
-        ],
-      },
-    });
+    // new Chart(lineChartContext, {
+    //   type: "line",
+    //   data: {
+    //     labels: [
+    //       "22 Dec - 23 Jan",
+    //       "24 Jan - 19 Feb",
+    //       "20 Feb - 19 Mar",
+    //       "20 Mar - 20 April",
+    //     ],
+    //     datasets: [
+    //       {
+    //         label: "Bug Prediction",
+    //         data: extendedRegressionLine,
+    //         borderColor: "#FF6384",
+    //         fill: false,
+    //       },
+    //     ],
+    //   },
+    // });
 
     // Bar Chart
     const barChartContext = barChartRef.current.getContext("2d");
 
     const barChartData = {
-      labels: ["22 Dec - 23 Jan", "24 Jan - 19 Feb", "20 Feb - 19 Mar"],
+      labels: ["20 Feb - 27 Feb", "28 Feb - 5 March", "6 March - 14 Mar"],
       datasets: [
         {
           label: "Bar Chart",
-          data: [99, 116, 76],
+          data: [45,20,14],
           backgroundColor: "#00796B",
         },
       ],
@@ -107,8 +107,8 @@ const BugChart = () => {
               </div>
             </Col>
             <Col md={6} className="chart-container">
-              <div className="chart-background">
-                <canvas ref={lineChartRef}></canvas>
+              <div className="chart-background padding-bottom">
+                {/* <canvas ref={lineChartRef}></canvas> */}
                 <canvas ref={barChartRef}></canvas>
               </div>
             </Col>
