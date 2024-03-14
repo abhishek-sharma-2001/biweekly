@@ -14,7 +14,7 @@ import fifth from "../assets/5th.png";
 const TopPerformers = () => {
   const [isConfettiActive, setConfettiActive] = useState(true);
   const [topPerformersData, setTopPerformersData] = useState([]);
-  const rankImages = [first, second, third, fourth, fifth];
+  const rankImages = [second, fourth, first, third, fifth];
 
   useEffect(() => {
     // Fetch top performers data from the API

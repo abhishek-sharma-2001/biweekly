@@ -1,6 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import axios from 'axios';
-import { Table } from 'react-bootstrap';
+import { Table } from 'react-bootstrap'; // Import Table component from react-bootstrap
+import { BiSortUp, BiSortDown } from 'react-icons/bi'; // Import icons from react-icons library
 
 const JsonTable = () => {
   const [data, setData] = useState([]);
@@ -47,14 +48,54 @@ const JsonTable = () => {
       <Table striped bordered hover>
         <thead>
           <tr>
-            <th onClick={() => handleSort('Domain Name')} style={{ cursor: 'pointer' }}>Domain Name</th>
-            <th onClick={() => handleSort('Issue Count')} style={{ cursor: 'pointer' }}>Issue Count</th>
-            <th onClick={() => handleSort('Issue Score')} style={{ cursor: 'pointer' }}>Issue Score</th>
-            <th onClick={() => handleSort('Blocker')} style={{ cursor: 'pointer' }}>Blocker</th>
-            <th onClick={() => handleSort('Critical')} style={{ cursor: 'pointer' }}>Critical</th>
-            <th onClick={() => handleSort('Major')} style={{ cursor: 'pointer' }}>Major</th>
-            <th onClick={() => handleSort('Normal')} style={{ cursor: 'pointer' }}>Normal</th>
-            <th onClick={() => handleSort('Minor')} style={{ cursor: 'pointer' }}>Minor</th>
+            <th onClick={() => handleSort('Domain Name')} style={{ cursor: 'pointer' }}>
+              Domain Name
+              {sortBy === 'Domain Name' && ( // Display icon based on sorting order
+                sortOrder === 'asc' ? <BiSortUp /> : <BiSortDown />
+              )}
+            </th>
+            <th onClick={() => handleSort('Issue Count')} style={{ cursor: 'pointer' }}>
+              Issue Count
+              {sortBy === 'Issue Count' && ( // Display icon based on sorting order
+                sortOrder === 'asc' ? <BiSortUp /> : <BiSortDown />
+              )}
+            </th>
+            <th onClick={() => handleSort('Issue Score')} style={{ cursor: 'pointer' }}>
+              Issue Score
+              {sortBy === 'Issue Score' && ( // Display icon based on sorting order
+                sortOrder === 'asc' ? <BiSortUp /> : <BiSortDown />
+              )}
+            </th>
+            <th onClick={() => handleSort('Blocker')} style={{ cursor: 'pointer' }}>
+              Blocker
+              {sortBy === 'Blocker' && ( // Display icon based on sorting order
+                sortOrder === 'asc' ? <BiSortUp /> : <BiSortDown />
+              )}
+            </th>
+            <th onClick={() => handleSort('Critical')} style={{ cursor: 'pointer' }}>
+              Critical
+              {sortBy === 'Critical' && ( // Display icon based on sorting order
+                sortOrder === 'asc' ? <BiSortUp /> : <BiSortDown />
+              )}
+            </th>
+            <th onClick={() => handleSort('Major')} style={{ cursor: 'pointer' }}>
+              Major
+              {sortBy === 'Major' && ( // Display icon based on sorting order
+                sortOrder === 'asc' ? <BiSortUp /> : <BiSortDown />
+              )}
+            </th>
+            <th onClick={() => handleSort('Normal')} style={{ cursor: 'pointer' }}>
+              Normal
+              {sortBy === 'Normal' && ( // Display icon based on sorting order
+                sortOrder === 'asc' ? <BiSortUp /> : <BiSortDown />
+              )}
+            </th>
+            <th onClick={() => handleSort('Minor')} style={{ cursor: 'pointer' }}>
+              Minor
+              {sortBy === 'Minor' && ( // Display icon based on sorting order
+                sortOrder === 'asc' ? <BiSortUp /> : <BiSortDown />
+              )}
+            </th>
           </tr>
         </thead>
         <tbody>
