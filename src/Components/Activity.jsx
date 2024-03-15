@@ -214,7 +214,7 @@ const Activity = () => {
               <div>
                 <h3 className="info-align">ComeBack of Old Program Manager</h3>
                 <p>
-                  Vedant Sir has been appointed once again as our Program
+                  <b>Vedant</b> Sir has been appointed once again as our Program
                   Manager
                 </p>
               </div>
