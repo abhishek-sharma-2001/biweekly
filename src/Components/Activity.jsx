@@ -8,6 +8,8 @@ import New_member from "../assets/New_Members.png";
 import Senior_release from "../assets/Senior_released.png";
 import TeamLead_assign from "../assets/TeamLead_assign.png";
 import NewProgramManager from "../assets/NewProgramManager.png";
+import testcase3 from "../assets/testcase4.png";
+import oldPM from "../assets/vedant_Sir.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -80,10 +82,10 @@ const Activity = () => {
                   PDT (Post Deployment Testing) for MP&apos;s Corner
                 </h3>
                 <p>
-                  Anagha, Anushree, Shivam, Tanvi, Khushi, Naman, Harshada,
-                  Amreen, Avinash, Sumit, Yasheen, Vishnu, Atharva Golapkar,
-                  Atharv Deshpande, and Kartik &#40;15 members&#41; have
-                  performed the PDT this time.
+                  First pdt for whole team without Seniors<br></br>
+                  1. Sprint X &#40;<b>Citizen View</b>&#41; was live<br></br>
+                  2. Feature Testing<br></br>
+                  3. All the bugs were retested<br></br>
                 </p>
               </div>
             </Col>
@@ -93,6 +95,37 @@ const Activity = () => {
           <Row>
             <Col md={6}>
               <div>
+                <h3 className="info-align">TestCase Maintainence</h3>
+                <p>
+                  1. Merging of Testcases<br></br>
+                  2. Testcase Execution<br></br>
+                  3. New Testcases were uploaded<br></br>
+                  4. Updated the TestCases as per the New product feature
+                </p>
+              </div>
+            </Col>
+            <Col md={6} data-aos="fade-left">
+              <img
+                className="right-to-left img-fluid"
+                src={testcase3}
+                alt="Section 4 Image"
+                width={400}
+              />
+            </Col>
+          </Row>
+
+          {/* Section 4 */}
+          {/* Section 4 */}
+          <Row>
+            <Col md={6} data-aos="fade-right">
+              <img
+                className="left-to-right img-fluid"
+                src={New_member}
+                alt="Section 4 Image"
+              />
+            </Col>
+            <Col md={6}>
+              <div>
                 <h3 className="info-align">KT to New Members</h3>
                 <p>
                   <b>25</b> new members are added to the team and provided the
@@ -100,24 +133,10 @@ const Activity = () => {
                 </p>
               </div>
             </Col>
-            <Col md={6} data-aos="fade-left">
-              <img
-                className="right-to-left img-fluid"
-                src={New_member}
-                alt="Section 4 Image"
-              />
-            </Col>
           </Row>
 
           {/* Section 5 */}
           <Row>
-            <Col md={6} data-aos="fade-right">
-              <img
-                className="left-to-right img-fluid"
-                src={Senior_release}
-                alt="Section 5 Image"
-              />
-            </Col>
             <Col md={6}>
               <div>
                 <h3 className="info-align">
@@ -129,10 +148,25 @@ const Activity = () => {
                 </p>
               </div>
             </Col>
+            <Col md={6} data-aos="fade-left">
+              <img
+                className="right-to-left img-fluid"
+                src={Senior_release}
+                alt="Section 5 Image"
+              />
+            </Col>
           </Row>
 
           {/* Section 6 */}
           <Row>
+            <Col md={6} data-aos="fade-right">
+              <img
+                className="left-to-right img-fluid"
+                src={TeamLead_assign}
+                alt="Section 6 Image"
+                height={450}
+              />
+            </Col>
             <Col md={6}>
               <div>
                 <h3 className="info-align">New TeamLeads Assigned</h3>
@@ -142,25 +176,10 @@ const Activity = () => {
                 </p>
               </div>
             </Col>
-            <Col md={6} data-aos="fade-left">
-              <img
-                className="right-to-left img-fluid"
-                src={TeamLead_assign}
-                alt="Section 6 Image"
-                height={450}
-              />
-            </Col>
           </Row>
 
           {/* Section 7 */}
           <Row>
-            <Col md={6} data-aos="fade-right">
-              <img
-                className="left-to-right img-fluid"
-                src={NewProgramManager}
-                alt="Section 7 Image"
-              />
-            </Col>
             <Col md={6}>
               <div>
                 <h3 className="info-align">
@@ -170,6 +189,33 @@ const Activity = () => {
                   <b>Rahul Bhandari</b> sir has been appointed as our new
                   Program Manager, and 2 new members named <b>Ankita Roy</b> and{" "}
                   <b>Payas Patel</b> were added to our group.
+                </p>
+              </div>
+            </Col>
+            <Col md={6} data-aos="fade-left">
+              <img
+                className="right-to-left img-fluid"
+                src={NewProgramManager}
+                alt="Section 7 Image"
+              />
+            </Col>
+          </Row>
+          {/* Section 6 */}
+          <Row>
+            <Col md={6} data-aos="fade-right">
+              <img
+                className="left-to-right img-fluid"
+                src={oldPM}
+                alt="Section 6 Image"
+                width={400}
+              />
+            </Col>
+            <Col md={6}>
+              <div>
+                <h3 className="info-align">ComeBack of Old PM</h3>
+                <p>
+                  Vedant Sir has been appointed once again as our Program
+                  Manager
                 </p>
               </div>
             </Col>
