@@ -207,7 +207,7 @@ const Activity = () => {
                 className="left-to-right img-fluid"
                 src={oldPM}
                 alt="Section 6 Image"
-                width={400}
+                width={450}
               />
             </Col>
             <Col md={6}>
