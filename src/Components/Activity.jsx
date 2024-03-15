@@ -220,6 +220,7 @@ const Activity = () => {
               </div>
             </Col>
           </Row>
+          <br />
         </Container>
       </Container>
     </div>
