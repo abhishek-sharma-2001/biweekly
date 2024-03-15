@@ -212,7 +212,7 @@ const Activity = () => {
             </Col>
             <Col md={6}>
               <div>
-                <h3 className="info-align">ComeBack of Old PM</h3>
+                <h3 className="info-align">ComeBack of Old Program Manager</h3>
                 <p>
                   Vedant Sir has been appointed once again as our Program
                   Manager
