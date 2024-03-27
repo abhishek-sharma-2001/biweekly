@@ -20,7 +20,7 @@ const BugChart = () => {
         labels: ["Blocker", "Critical", "Major", "Normal", "Minor"],
         datasets: [
           {
-            data: [1, 12, 18, 30, 15],
+            data: [3, 17, 35, 57, 27],
             backgroundColor: [
               "#8B0000", // Dark Red
               "#FF0000", // Red
@@ -77,11 +77,11 @@ const BugChart = () => {
     const barChartContext = barChartRef.current.getContext("2d");
 
     const barChartData = {
-      labels: ["20 Feb - 27 Feb", "28 Feb - 5 March", "6 March - 14 Mar"],
+      labels: ["20 Feb - 27 Feb", "28 Feb - 5 Mar", "6 Mar - 12 Mar","13 Mar - 19 Mar","20 Mar - 27 Mar"],
       datasets: [
         {
           label: "Bar Chart",
-          data: [45,20,14],
+          data: [45, 20, 14,29,36],
           backgroundColor: "#00796B",
         },
       ],
