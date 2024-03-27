@@ -8,19 +8,20 @@ import second from "../assets/2nd.png";
 import third from "../assets/3rd.png";
 import fourth from "../assets/4th.png";
 import fifth from "../assets/5th.png";
+import sixth from "../assets/6th.png";
 
 
 
 const TopPerformers = () => {
   const [isConfettiActive, setConfettiActive] = useState(true);
   const [topPerformersData, setTopPerformersData] = useState([]);
-  const rankImages = [second, fourth, first, third, fifth];
+  const rankImages = [sixth,third,fifth,second,fourth];
 
   useEffect(() => {
     // Fetch top performers data from the API
     const fetchTopPerformersData = async () => {
       try {
-        const response = await axios.get('https://api.jsonbin.io/v3/b/65f2951b266cfc3fde982013');
+        const response = await axios.get('https://api.jsonbin.io/v3/b/66045533c859604a6a03385e');
         setTopPerformersData(response.data.record.slice(0, 5));
       } catch (error) {
         console.error('Error fetching top performers data:', error);

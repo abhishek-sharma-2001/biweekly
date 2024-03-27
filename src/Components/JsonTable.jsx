@@ -11,7 +11,7 @@ const JsonTable = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get('https://api.jsonbin.io/v3/b/65f2951b266cfc3fde982013');
+        const response = await axios.get('https://api.jsonbin.io/v3/b/66045533c859604a6a03385e');
         setData(response.data.record);
       } catch (error) {
         console.error('Error fetching data:', error);
